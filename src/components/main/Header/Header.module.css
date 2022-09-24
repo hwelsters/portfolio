@@ -1,0 +1,26 @@
+.root {
+  display: flex;
+  width: clamp(1rem, 90%, 45rem);
+  min-height: calc(100vh - var(--navbar-height) - 1px) !important;
+  color: var(--font-color);
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.hand:hover {
+  animation: shake 2s;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+/* ANIMATIONS */
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

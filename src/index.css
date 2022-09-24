@@ -1,0 +1,65 @@
+body {
+  /* CSS VARIABLES TO KEEP THINGS STANDARDISED */
+  --margin: 2rem;
+  --padding-small: 1rem;
+  --border-radius: 1rem;
+
+  --font-color: #ffffff;
+  --bg-color: #141414;
+
+  --navbar-height: 5rem;
+
+  --project-height: 15rem;
+  --project-img-aspect-ratio: 4/3;
+
+  /* REMOVES MARGINS */
+  margin: 0;
+
+  /* MAKE SURE BODY TAKES UP THE WHOLE SCREEN */
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+
+  align-items: center;
+
+  /* SETTING SOME DEFAULT VALUES */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+/* Customized scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--font-color);
+  border-radius: 1rem;
+  width: 0.01rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.95);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

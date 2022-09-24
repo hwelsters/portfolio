@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+
+  background-color: transparent;
+  color: var(--font-color);
+  width: 100%;
+  flex-direction: row;
+
+  margin-bottom: var(--margin);
+
+  border-style: solid;
+  border-width: 1px;
+}
+
+@media only screen and (max-width: 800px) {
+  .root {
+    flex-direction: column;
+  }
+}
+
+.image {
+  width: 50%;
+  aspect-ratio: var(--project-img-aspect-ratio);
+
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 800px) {
+  .image {
+    width: 100%;
+  }
+}
+
+.textDiv {
+  display: flex;
+
+  padding: var(--padding-small);
+  height: calc(var(--project-height) - 2 * var(--padding-small));
+  object-fit: contain;
+
+  overflow-y: auto;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+
+  color: var(--font-color);
+}
+
+.icon {
+  margin-right: var(--padding-small);
+  cursor: pointer;
+}
