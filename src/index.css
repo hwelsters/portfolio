@@ -54,12 +54,3 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   filter: brightness(0.95);
 }
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
