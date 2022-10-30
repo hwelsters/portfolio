@@ -1,56 +1,116 @@
 body {
-  /* CSS VARIABLES TO KEEP THINGS STANDARDISED */
-  --margin: 2rem;
-  --padding-small: 1rem;
-  --border-radius: 1rem;
+  /* COLORS */
+  --black: #000000;
+  --white: #ffffff;
+  --green: #0cf64c;
+  --yellow: #ecbe14;
+  --red: #f7002a;
+  --grey: #c4c4c4;
 
-  --font-color: #ffffff;
-  --bg-color: #141414;
+  --navbar-height: 4rem;
 
-  --navbar-height: 5rem;
+  --font-color: var(--white);
+  --fg-color: var(--black);
+  --bg-color: var(--black);
 
-  --project-height: 15rem;
-  --project-img-aspect-ratio: 4/3;
-
-  /* REMOVES MARGINS */
-  margin: 0;
-
-  /* MAKE SURE BODY TAKES UP THE WHOLE SCREEN */
-  width: 100%;
-  height: 100vh;
   background-color: var(--bg-color);
+  color: var(--white);
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
 
+.title {
+  background: #b0f3f1;
+  background: linear-gradient(to right, #b0f3f1 0%, #ffcfdf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 3rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+}
+
+.description {
+  display: flex;
   align-items: center;
+  margin-top: 1rem;
+  color: var(--grey);
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
 
-  /* SETTING SOME DEFAULT VALUES */
-  font-family: "Josefin Sans", sans-serif;
+.gradient {
+  --color-purple: #8000ff;
+  --color-light-purple: #cf59e6;
+  --color-light-blue: #6bc5f8;
+
+  background: linear-gradient(-45deg, #ffcfdf, #b0f3f1, #ffcfdf, #b0f3f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradient_shift 5s ease-in-out infinite;
+  font-family: Mark;
+  font-weight: bolder;
+}
+
+.text {
+  -webkit-background-clip: none;
+  background-clip: none;
+  -webkit-text-fill-color: var(--font-color);
+  background-size: 200% auto;
+  animation: gradient_shift 3s ease-in-out infinite;
+  font-family: "Paytone One", sans-serif;
+}
+
+@keyframes gradient_shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+  font-family: Calibre;
+  src: url(./fonts/Calibre-Medium.ttf);
+}
+
+.wavy {
+  animation-name: wavy;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
-  color: var(--font-color);
 }
 
-/* Customized scrollbar */
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
+@keyframes wavy {
+  0% {
+    transform: translateY(0.2rem);
+    background-position: 0% 50%;
+  }
+  50% {
+    transform: translateY(-0.2rem);
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: translateY(0.2rem);
+    background-position: 0% 50%;
+  }
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-  padding: 1rem;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--font-color);
-  border-radius: 1rem;
-  width: 0.01rem;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  filter: brightness(0.95);
+@font-face {
+  font-family: Mark;
+  src: url("./fonts/MarkPro-Heavy.woff");
 }

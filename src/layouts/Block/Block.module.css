@@ -1,0 +1,9 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: clamp(1rem, 80%, 65rem);
+  margin-top: 2rem;
+  margin-bottom:12rem;
+}

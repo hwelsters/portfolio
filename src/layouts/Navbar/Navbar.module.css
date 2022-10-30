@@ -1,0 +1,48 @@
+.root {
+  position: sticky;
+  top: 2rem;
+  left: 0;
+  border-radius: 1rem;
+  height: var(--navbar-height);
+  font-size: 2rem;
+
+  width: clamp(1rem, 100%, 35rem);
+  background: rgba(42, 43, 56, 0.5);
+  border: 0.1rem solid #2a2b37;
+  -webkit-backdrop-filter: blur(104px);
+  backdrop-filter: blur(104px);
+
+  font-size: medium;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+
+  z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+  .root {
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    backdrop-filter: 0;
+    background-color: var(--bg-color);
+  }
+}
+
+.logo {
+  height: 75%;
+  aspect-ratio: 1/1;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,7 @@
+.award {
+  margin-top: 2rem;
+  font-size: x-large;
+  font-weight: bold;
+  width: 80%;
+  color: var(--font-color);
+}

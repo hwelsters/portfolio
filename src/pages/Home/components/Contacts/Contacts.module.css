@@ -1,0 +1,27 @@
+.foot {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.icon {
+  font-size: 3rem !important;
+  margin-right: 2rem;
+  cursor: pointer;
+  transform: scale(1);
+
+  transition: all 250ms !important;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}
+
+.icon:active {
+  transform: scale(0.95);
+}
+
+.copiedEmail {
+  position: absolute;
+  margin-top: 15rem;
+}
