@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <title>{config.name}</title>
       <Routes>
-        <Route path={pathURLs.home} element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
