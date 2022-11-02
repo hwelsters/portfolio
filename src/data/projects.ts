@@ -1,7 +1,7 @@
 export const projects: Array<ProjectInterface> = [
   {
     name: "whine",
-    githubURL: "",
+    githubURL: "https://github.com/hwelsters/whine",
     externalURL: "https://whining.herokuapp.com/",
     skills: "MONGODB, EXPRESS.JS, REACT.JS, NODE.JS"
   },
