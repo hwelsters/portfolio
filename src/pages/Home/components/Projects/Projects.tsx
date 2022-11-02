@@ -23,8 +23,7 @@ export default function Projects() {
       <span className="title">Things I've worked on</span>
       <span className="description">
         I love making cool stuff for people to enjoy. Click on some
-        links (<OpenInNewIcon />) or check out my Github repositories (
-        <GitHubIcon />)
+        links or check out my Github repositories
       </span>
       <div className={styles.project_div}>
         {projects.map((e, index) => {
