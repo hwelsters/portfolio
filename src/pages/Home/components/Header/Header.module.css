@@ -15,7 +15,7 @@
 }
 
 .name {
-  font-size: clamp(5rem, 8vw, 15rem);
+  font-size: clamp(5rem, 8vw, 8rem);
   font-family: Mark;
   font-weight: normal;
 }

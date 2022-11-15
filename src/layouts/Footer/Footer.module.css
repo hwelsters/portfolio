@@ -1,6 +1,7 @@
 .root {
     display: flex;
     flex-direction: column;
+    text-align: center;
     height: 15rem;
     color: var(--grey);
     align-items: center;
