@@ -39,12 +39,23 @@
   flex: 1;
 }
 
+.description,
 .skills {
   display: flex;
-  font-size: 0.75rem;
-  font-weight: light;
   letter-spacing: 3px;
   width: 100%;
+}
+
+.description {
+  font-weight: light;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  font-size: 0.75rem;
+  font-weight: bolder;
 }
 
 .links {

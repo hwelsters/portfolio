@@ -7,6 +7,7 @@ type ProjectParams = {
   className?: string;
   skills?: string;
   name?: string;
+  description?: string;
   externalURL?: string;
   githubURL?: string;
 };
@@ -14,6 +15,7 @@ export default function Project({
   className,
   skills,
   name,
+  description,
   externalURL,
   githubURL,
 }: ProjectParams) {
@@ -34,6 +36,7 @@ export default function Project({
           )}
         </span>
         <span className={styles.project_name}>{name}</span>
+        <span className={styles.description}>{description}</span>
         <span className={styles.skills}>{skills}</span>
       </div>
     </a>

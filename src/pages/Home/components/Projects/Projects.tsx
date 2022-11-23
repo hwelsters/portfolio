@@ -33,6 +33,7 @@ export default function Projects() {
               githubURL={e.githubURL}
               externalURL={e.externalURL}
               name={e.name}
+              description={e.description}
               skills={e.skills}
             />
           );

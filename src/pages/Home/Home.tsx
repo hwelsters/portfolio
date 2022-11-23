@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import Contacts from "./components/Contacts/Contacts";
 import Awards from "./components/Awards/Awards";
 import About from "./components/About/About";
+import Graveyard from "./components/Graveyard/Graveyard";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <About/>
       <Projects />
       <Awards />
+      <Graveyard/>
       <Contacts />
       <Footer />
     </PageContainer>
