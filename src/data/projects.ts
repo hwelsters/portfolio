@@ -22,6 +22,15 @@ export const projects: Array<ProjectInterface> = [
   
 ];
 
+export const graveyard: Array<ProjectInterface> = [
+  {
+    name: "mod",
+    description: "Yoga tutorial website",
+    githubURL: "https://github.com/hwelsters/mod",
+    skills: "TENSORFLOW.JS, REACT.JS, NODE.JS, EXPRESS.JS"
+  }
+]
+
 export type ProjectInterface = {
   name: string;
   githubURL?: string;

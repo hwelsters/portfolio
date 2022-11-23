@@ -19,7 +19,6 @@ export default function Home() {
       <About/>
       <Projects />
       <Awards />
-      <Graveyard/>
       <Contacts />
       <Footer />
     </PageContainer>
