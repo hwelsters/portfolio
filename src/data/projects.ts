@@ -7,7 +7,7 @@ export const projects: Array<ProjectInterface> = [
   },
   {
     name: "whine",
-    description: "Minimalistic social media website with AFINN sentiment analysis",
+    description: "Heroku recently removed their free tier so I am working towards getting it deployed on AWS",
     githubURL: "https://github.com/hwelsters/whine",
     externalURL: "https://whining.herokuapp.com/",
     skills: "MONGODB, EXPRESS.JS, REACT.JS, NODE.JS"
