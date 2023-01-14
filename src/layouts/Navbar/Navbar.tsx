@@ -6,7 +6,7 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import PauseIcon from "@mui/icons-material/Pause";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import Face6Icon from "@mui/icons-material/Face6";
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
 
 import pageURLs from "data/pageURLs";
 import { HashLink } from "react-router-hash-link";
@@ -77,7 +77,7 @@ export default function Navbar() {
 
             </span>
           </span>
-          <PlayArrowIcon className={styles.icon} />
+          <MusicNoteIcon className={styles.icon} />
         </span>
       </span>
     </div>
