@@ -80,7 +80,7 @@
 
   flex-direction: column;
 
-  right: -1rem;
+  right: 0rem;
   top: var(--navbar-height);
 
   width: 10rem;
