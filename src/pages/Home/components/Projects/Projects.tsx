@@ -20,7 +20,7 @@ export default function Projects() {
 
   return (
     <Block className={styles.root} data-aos="slide-right">
-      <span className="title">Things I've worked on</span>
+      <span className="title">Projects</span>
       <span className="description">
         I love making cool stuff for people to enjoy. Click on some
         links or check out my Github repositories

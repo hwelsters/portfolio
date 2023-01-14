@@ -10,18 +10,11 @@ type ProjectParams = {
   description?: string;
   externalURL?: string;
   githubURL?: string;
+  imgSrc?: string;
 };
-export default function Project({
-  className,
-  skills,
-  name,
-  description,
-  externalURL,
-  githubURL,
-}: ProjectParams) {
+export default function Project({ className, skills, name, description, externalURL, githubURL, imgSrc }: ProjectParams) {
   return (
     <a href={externalURL} data-aos="zoom-in">
-
       <div className={`${styles.root} ${className}`}>
         <span className={styles.links}>
           {githubURL && (
@@ -35,6 +28,7 @@ export default function Project({
             </a>
           )}
         </span>
+        <img src={imgSrc} />
         <span className={styles.project_name}>{name}</span>
         <span className={styles.description}>{description}</span>
         <span className={styles.skills}>{skills}</span>

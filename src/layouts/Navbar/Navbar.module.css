@@ -37,6 +37,7 @@
   height: 100%;
   margin-right: 1rem;
   margin-left: 1rem;
+  z-index: 0;
 }
 
 .logo {
@@ -59,8 +60,96 @@
   font-size: 2rem !important;
   margin-left: 1.5rem;
   z-index: 10;
+  cursor: pointer;
 }
 
 .icon:hover {
   transform: scale(1.05);
+}
+
+.play {
+  position: relative;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+
+  align-items: left;
+  justify-content: center;
+
+  flex-direction: column;
+
+  right: -1rem;
+  top: var(--navbar-height);
+
+  width: 10rem;
+
+  background: rgba(42, 43, 56, 0.5);
+  border: 0.1rem solid #2a2b37;
+  -webkit-backdrop-filter: blur(104px);
+  backdrop-filter: blur(104px);
+
+  border-radius: 0.5rem;
+
+  padding: 1rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+.song_name {
+  font-weight: lighter;
+  font-size: 0.9em;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.cssmarquee {
+  height: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.cssmarquee span {
+  position: absolute;
+  text-align: center;
+  animation: cssmarquee 10s linear infinite;
+}
+@keyframes cssmarquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+*:focus > .modal,
+*:focus + .modal {
+  display: flex;
+}
+
+.control_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.control_span:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.play_button {
+  font-size: 1.5rem !important;
+  transform: scale(1.75);
+  z-index: 10;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.skip_button {
+  font-size: 1.5rem !important;
+  z-index: 10;
+  transform: scale(1);
 }

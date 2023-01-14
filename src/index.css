@@ -37,7 +37,7 @@ body {
   align-items: center;
   margin-top: 1rem;
   color: var(--grey);
-  letter-spacing: clamp(0.01rem,2vw, 0.2rem);
+  letter-spacing: clamp(0.01rem, 2vw, 0.2rem);
   font-size: 0.9rem;
 }
 

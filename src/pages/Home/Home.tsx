@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Contacts from "./components/Contacts/Contacts";
 import Awards from "./components/Awards/Awards";
 import About from "./components/About/About";
+import Experience from "./components/Experiences/Experience";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <About/>
+      <Experience/>
       <Projects />
       <Awards />
       <Contacts />

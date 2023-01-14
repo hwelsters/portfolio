@@ -1,0 +1,77 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: var(--font-color);
+  color: #444;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+
+  font-weight: bold;
+
+  margin-top: 2rem;
+  text-align: left;
+  border-width: 0.1rem;
+  border-color: transparent;
+  border-style: solid;
+  outline: none;
+
+  transition: box-shadow 150ms;
+}
+
+.accordion:focus {
+  background: var(--bg-color);
+  color: var(--font-color);
+  border-color: var(--font-color);
+  box-shadow: -0.25rem 0.25rem black, -0.25rem 0.25rem 0px 1.5px white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  display: none;
+
+  background-image: var(--font-color);
+  color: var(--bg-color);
+
+  padding: 1rem;
+  height: 0;
+  width: calc(100% - 2 * 0.1rem);
+
+  margin-left: -1rem;
+  margin-bottom: -1rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+
+  white-space: pre-line;
+
+  font-size: 0rem;
+  line-height: 0rem;
+
+  transition: all 1s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+*:focus > .panel {
+  display: flex;
+  height: fit-content;
+  
+  
+  color: var(--font-color);
+  border-color: var(--font-color);
+  border-style: solid;
+  border-width: 0.1rem 0;
+  
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
