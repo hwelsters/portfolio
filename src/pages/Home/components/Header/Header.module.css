@@ -35,7 +35,7 @@
   color: var(--grey);
   margin-top: 1rem;
   font-family: "Outfit", sans-serif;
-  font-size: small;
+  font-size: 0.85rem;
   letter-spacing: 4px;
   width: clamp(1rem, 100%, 30rem);
 }
