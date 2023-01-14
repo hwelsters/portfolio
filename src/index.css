@@ -116,3 +116,32 @@ a {
   font-family: Mark;
   src: url("./fonts/MarkPro-Heavy.woff");
 }
+
+.hithere {
+  animation-name: hithere;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes hithere {
+  3% {
+    transform: scale(1.25);
+  }
+  4%,
+  6% {
+    transform: rotate(-5deg) scale(1.25);
+  }
+  5% {
+    transform: rotate(5deg) scale(1.25);
+  }
+  7% {
+    transform: rotate(0deg) scale(1.25);
+  }
+  10%,
+  100% {
+    transform: scale(1);
+  }
+}
