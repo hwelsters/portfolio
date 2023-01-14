@@ -80,7 +80,7 @@
 
   flex-direction: column;
 
-  right: 0rem;
+  right: -1rem;
   top: var(--navbar-height);
 
   width: 10rem;
@@ -95,6 +95,20 @@
   padding: 1rem;
   font-family: "Source Code Pro", monospace;
 }
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .small_screen {
+    display: none;
+  }
+}
+
+
 
 .song_name {
   font-weight: lighter;

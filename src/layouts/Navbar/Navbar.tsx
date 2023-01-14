@@ -77,7 +77,7 @@ export default function Navbar() {
 
             </span>
           </span>
-          <MusicNoteIcon className={styles.icon} />
+          <MusicNoteIcon className={`${styles.icon} ${styles.small_screen}`} />
         </span>
       </span>
     </div>
