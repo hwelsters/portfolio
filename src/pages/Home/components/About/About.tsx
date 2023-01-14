@@ -8,7 +8,7 @@ export default function About() {
         Computer Science student at Arizona State University.
         <br />
         <br />
-        Programming is my favorite hobby and I hope to some day make it a full-time job!
+        I am an aspiring software engineer with interests in web development, machine learning, devops and gamedev. Programming is my favorite thing to do and I hope to some day make it a full-time job!
       </span>
     </Block>
   );
