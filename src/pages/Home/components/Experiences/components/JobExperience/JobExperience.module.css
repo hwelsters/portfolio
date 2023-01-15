@@ -67,6 +67,18 @@
 .top {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .top {
+    font-size: 0.95rem;
+  }
+}
+
+.top > span {
+  overflow-x: ellipsis;
 }
 
 .left {

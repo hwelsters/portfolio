@@ -28,6 +28,14 @@ body {
   font-size: 3rem;
   font-family: "Outfit", sans-serif;
   font-weight: bold;
+
+  hyphens: manual;
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    word-break: break-all;
+  }
 }
 
 .description {

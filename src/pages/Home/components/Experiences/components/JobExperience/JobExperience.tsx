@@ -4,7 +4,7 @@ import AddIcon from "@mui/icons-material/Add";
 
 import styles from "./JobExperience.module.css";
 
-export default function JobExperience({ title, description, date, gradient }: { title: string; description: string; date: string; gradient:string }) {
+export default function JobExperience({ title, description, gradient }: { title: string; description: string; gradient: string }) {
   const [isActive, setIsActive] = useState<boolean>(false);
   return (
     <>
@@ -12,7 +12,6 @@ export default function JobExperience({ title, description, date, gradient }: { 
         <span className={styles.top}>
           <span>{title}</span>
           <span className={styles.left}>
-            {date}
             <AddIcon />
           </span>
         </span>

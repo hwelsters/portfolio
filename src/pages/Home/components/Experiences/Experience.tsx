@@ -16,11 +16,11 @@ export default function Experience() {
 
   return (
     <Block>
-      <span className="title">Professional Experience</span>
+      <span className="title">Professional experience</span>
       <span className="description">I've gained work experience in various areas</span>
       <span></span>
       {experience.map((element, index) => {
-        return <JobExperience title={element.title} description={element.description} date={element.date} gradient={""}/>;
+        return <JobExperience title={element.title} description={element.description} gradient={""}/>;
       })}
     </Block>
   );
