@@ -28,6 +28,7 @@ export default function Navbar() {
   };
 
   const changeTrack = (index : number) => {
+    if (index < 0) index += audioLinks.length
     setTrackIndex(index % audioLinks.length);
   }
 
