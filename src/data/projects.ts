@@ -3,6 +3,7 @@ export const projects: Array<ProjectInterface> = [
     name: "axolotl",
     description: "Python programming tutorial website that's currently a WIP",
     githubURL: "https://github.com/hwelsters/axolotl",
+    externalURL: "http://axolotl-env.eba-gtrsqkqr.us-west-1.elasticbeanstalk.com",
     skills: "PYTHON, REACT.JS, NODE.JS, EXPRESS.JS"
   },
   {
