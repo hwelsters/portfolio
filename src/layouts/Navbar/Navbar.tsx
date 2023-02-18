@@ -13,8 +13,8 @@ import { HashLink } from "react-router-hash-link";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
-  const audioNames = ["NOEL NGU - Awesomeland", "NOEL NGU - Epic Face-off"];
-  const audioLinks = ["https://audio.jukehost.co.uk/jpuo6umHTfxybvwj0zE4XfZOu4vMpAaZ", "https://audio.jukehost.co.uk/OnL08TbQGTZvLhMg5ziYdM9ROwELu851"];
+  const audioNames = ["NOEL NGU - Awesomeland", "NOEL NGU - Epicsonk", "NOEL NGU - Jazzsonk"];
+  const audioLinks = ["https://audio.jukehost.co.uk/jpuo6umHTfxybvwj0zE4XfZOu4vMpAaZ", "https://audio.jukehost.co.uk/OnL08TbQGTZvLhMg5ziYdM9ROwELu851", "https://audio.jukehost.co.uk/zgtC5GADC45GrDvbitY9rv0sxmPxzHbU"];
 
   const [isPlaying, setIsPlaying] = useState<Boolean>(false);
   const [trackIndex, setTrackIndex] = useState<number>(0);
