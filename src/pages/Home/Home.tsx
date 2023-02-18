@@ -15,9 +15,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <About/>
-      <Experience/>
       <Projects />
-      <Awards />
       <Contacts />
       <Footer />
     </PageContainer>
