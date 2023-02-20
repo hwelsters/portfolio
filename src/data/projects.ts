@@ -1,17 +1,17 @@
 export const projects: Array<ProjectInterface> = [
   {
-    name: "axolotl",
+    name: "snakecode",
     description: "Python programming tutorial website that's currently a WIP",
     githubURL: "https://github.com/hwelsters/axolotl",
-    externalURL: "http://axolotl-env.eba-gtrsqkqr.us-west-1.elasticbeanstalk.com",
-    skills: "PYTHON, REACT.JS, NODE.JS, EXPRESS.JS"
+    externalURL: "http://www.snakecode.org/",
+    skills: "PYTHON, REACT.JS, NODE.JS, EXPRESS.JS, AWS, CSS"
   },
   {
-    name: "whine",
-    description: "Heroku recently removed their free tier so I am working towards getting it deployed on AWS",
-    githubURL: "https://github.com/hwelsters/whine",
-    externalURL: "https://whining.herokuapp.com/",
-    skills: "MONGODB, EXPRESS.JS, REACT.JS, NODE.JS"
+    name: "portfolio",
+    description: "This website.",
+    githubURL: "https://github.com/hwelsters/portfolio",
+    externalURL: "https://www.hwelsters.com/",
+    skills: "REACT.JS, AMPLIFY, CSS"
   },
   {
     name: "edamame",
