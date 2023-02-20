@@ -1,7 +1,7 @@
 export const projects: Array<ProjectInterface> = [
   {
     name: "snakecode",
-    description: "Python programming tutorial website that's currently a WIP",
+    description: "The coolest Python programming tutorial website in the world.",
     githubURL: "https://github.com/hwelsters/axolotl",
     externalURL: "http://www.snakecode.org/",
     skills: "PYTHON, REACT.JS, NODE.JS, EXPRESS.JS, AWS, CSS"
@@ -15,7 +15,7 @@ export const projects: Array<ProjectInterface> = [
   },
   {
     name: "edamame",
-    description: "Block pushing puzzle game with logic-gates",
+    description: "Logic-gate sokoban game.",
     githubURL: "https://github.com/hwelsters/edamame",
     externalURL: "https://hwelsters.itch.io/edamame",
     skills: "UNITY, C#, ASEPRITE"
