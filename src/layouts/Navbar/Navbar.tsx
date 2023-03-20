@@ -7,6 +7,7 @@ import PauseIcon from "@mui/icons-material/Pause";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 
 import pageURLs from "data/pageURLs";
 import { HashLink } from "react-router-hash-link";
@@ -52,6 +53,10 @@ export default function Navbar() {
         <a href={pageURLs.githubURL}>
           <GitHub className={styles.icon} />
         </a>
+
+        {/* <a href={pageURLs.blog} className={styles.small_screen}>
+          <LibraryBooksIcon className={styles.icon} />
+        </a> */}
 
         <span className={styles.play} tabIndex={0}>
           <span className={styles.modal}>

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import Block from "layouts/Block/Block";
 import styles from "./Header.module.css";
 import Typewriter from "typewriter-effect";
@@ -6,7 +8,7 @@ export default function Header() {
   return (
     <Block className={styles.root}>
       <span className={styles.intro} id="header">HI THERE👋, I’M</span>
-      <span className={`${styles.name} wavy gradient`}>Noel Ngu</span>
+      <span className={`${styles.name} wavy gradient`}>Noel Ngu </span>
       <span className={styles.description}>
         {" "}
         <Typewriter

@@ -11,7 +11,6 @@ import Experience from "./components/Experiences/Experience";
 export default function Home() {
   return (
     <PageContainer>
-      <div id="top"/>
       <Navbar />
       <Header />
       <About/>
