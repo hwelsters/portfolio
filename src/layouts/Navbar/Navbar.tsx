@@ -28,12 +28,12 @@ export default function Navbar() {
     else audioRef.current.play();
   };
 
-  const changeTrack = (index : number) => {
+  const changeTrack = (index: number) => {
     if (index < 0) index += audioLinks.length
     setTrackIndex(index % audioLinks.length);
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     audioRef.current.pause();
     audioRef.current.load();
     if (isPlaying) audioRef.current.play();
@@ -68,8 +68,8 @@ export default function Navbar() {
               <source src={audioLinks[trackIndex]} type="audio/mp3" />
             </audio>
             <span className={styles.control_box}>
-              
-              <span className={styles.control_span} onClick={()=> changeTrack(trackIndex - 1)}>
+
+              <span className={styles.control_span} onClick={() => changeTrack(trackIndex - 1)}>
                 <SkipPreviousIcon className={styles.skip_button} />
               </span>
 
@@ -77,7 +77,7 @@ export default function Navbar() {
                 {isPlaying ? <PauseIcon className={styles.play_button} /> : <PlayArrowIcon className={styles.play_button} />}
               </span>
 
-              <span className={styles.control_span} onClick={()=> changeTrack(trackIndex + 1)}>
+              <span className={styles.control_span} onClick={() => changeTrack(trackIndex + 1)}>
                 <SkipNextIcon className={styles.skip_button} />
               </span>
 
